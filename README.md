@@ -1,2 +1,3 @@
 # Angular Shopping Tutorial 
 
+Learning Angular by goofing around with the code ...
