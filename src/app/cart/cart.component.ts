@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../cart.service';
+import { Product } from '../products';
 
 @Component({
   selector: 'app-cart',
@@ -13,6 +14,11 @@ export class CartComponent implements OnInit {
   constructor(private cartService: CartService) { }
 
   ngOnInit(): void {
+  }
+
+  removeFromCart(item: Product) : void {
+    // Note: this should refresh the view somehow ...
+    this.cartService.remove(item)
   }
 
 }

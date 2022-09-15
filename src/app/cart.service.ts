@@ -18,6 +18,10 @@ export class CartService {
     return this.items;
   }
 
+  remove(product: Product) {
+    this.items = this.items.filter(p => p.id != product.id);
+  }
+
   clearCart() {
     this.items = [];
     return this.items;
